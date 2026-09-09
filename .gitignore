@@ -1,0 +1,15 @@
+# --- Obsidian ---
+.obsidian/
+.trash/
+*.tmp
+
+# --- OS junk ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# --- Course materials (large binaries kept locally / on OneDrive only) ---
+*.pdf
+*.mp3
+*.mp4
+*.wav

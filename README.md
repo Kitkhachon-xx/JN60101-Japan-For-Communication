@@ -1,2 +1,33 @@
 # JN60101-Japan-For-Communication
-This Repo Create For Focus To Learn Japan Language , Summarize Detail In Each Week
+
+Repo/Obsidian Vault นี้ใช้สำหรับสรุปเนื้อหาการเรียนวิชา JN60101 ภาษาญี่ปุ่นเพื่อการสื่อสาร เป็นรายสัปดาห์
+
+เริ่มต้นดูภาพรวมรายวิชาทั้งหมด (อาจารย์, เกณฑ์คะแนน, ตารางเรียน) ได้ที่ [`05CLASSMOC/JN60101-MOC.md`](05CLASSMOC/JN60101-MOC.md)
+
+## โครงสร้าง Folder
+
+```
+00FORMAT/       Template มาตรฐานสำหรับเขียนสรุปแต่ละสัปดาห์ (ดู 00FORMAT/README.md)
+01LECTURE/      สรุปเนื้อหาบรรยาย แยกเป็น Folder ย่อยรายสัปดาห์ (Week01, Week02, ...)
+02ASSIGNMENT/   งาน/การบ้านที่ได้รับมอบหมาย
+03TESTGUIDE/    แนวข้อสอบ / สรุปเตรียมสอบ แยกตามสัปดาห์ที่สอบ
+05CLASSMOC/     Map of Content (MOC) ภาพรวมรายวิชา — สรุปจาก Course Introduction Slide
+```
+
+## การใช้งานกับ Obsidian
+
+1. เปิด Obsidian → **Open folder as vault** → เลือก Folder นี้
+2. เปิด `05CLASSMOC/JN60101-MOC.md` เป็นหน้าแรก เพื่อดูภาพรวมและลิงก์ไปยัง Folder อื่น ๆ
+3. ไฟล์สรุปแต่ละสัปดาห์ให้ Copy จาก `00FORMAT/Template-Week-Summary.md` ไปวางใน `01LECTURE/WeekXX/` แล้วตั้งชื่อไฟล์เป็น `JN60101-WeekXX.md` (ดูวิธีใช้เต็มใน `00FORMAT/README.md`)
+4. `.obsidian/` (การตั้งค่า vault ส่วนตัว เช่น theme, plugin) ถูก `.gitignore` ไว้ ไม่ commit เข้า Git
+
+## กติกาการเขียนสรุป
+
+- 1 สัปดาห์ = 1 ไฟล์ ห้ามรวมหลายสัปดาห์ในไฟล์เดียว
+- ทุกไฟล์ต้องขึ้นต้นด้วยหัวข้อ `# JN60101 - Week XX`
+- ใช้โครงสร้างหัวข้อย่อยตาม Template ใน `00FORMAT` เสมอ เพื่อให้ทุกสัปดาห์เป็นรูปแบบเดียวกัน
+- เนื้อหาที่ใช้สอบ (เช่น หัวข้อเฉพาะที่เป็นแนวข้อสอบ) ให้แยกออกมาสรุปไว้ใน `03TESTGUIDE/` ตามสัปดาห์ที่สอบ แล้วลิงก์กลับไปหาสรุปบทเรียนต้นฉบับใน `01LECTURE/`
+
+## หมายเหตุเรื่องไฟล์เอกสาร
+
+เอกสารประกอบการเรียน (PDF, ไฟล์เสียง ฯลฯ) ถูกตั้งไว้ใน `.gitignore` (ไฟล์ใหญ่เกิน limit ของ Git/GitHub) เก็บไว้ใน OneDrive ของเครื่องนี้เท่านั้น ไม่ถูก push ขึ้น Git
